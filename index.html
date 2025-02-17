@@ -102,6 +102,7 @@
 		function solve() { 
 			let x = document.getElementById("result").value 
 			let y = math.evaluate(x) 
+			let formattedResult = y.tolocaleString('id-ID');
 			document.getElementById("result").value = y 
 		} 
 

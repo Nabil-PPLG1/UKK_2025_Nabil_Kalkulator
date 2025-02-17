@@ -100,9 +100,10 @@
 
 		// Function that evaluates the digit and return result 
 		function solve() { 
-			let x = document.getElementById("result").value
-			let y = math.evaluate(x)
-			document.getElementById("result").value = y 
+			let x = document.getElementById("result").value;
+			let y = math.evaluate(x);
+			let formattedResult = y.toLocaleString('id-ID');
+			document.getElementById("result").value = formattedResult;
 		} 
 
 		// Function that clear the display 
